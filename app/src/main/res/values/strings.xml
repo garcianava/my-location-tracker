@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyLocationTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="store_current_location">Guardar ubicación</string>
+</resources>

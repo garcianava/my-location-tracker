@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "110342689159",
+    "project_id": "named-deck-292122",
+    "storage_bucket": "named-deck-292122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110342689159:android:03f21ab04681e42aa18322",
+        "android_client_info": {
+          "package_name": "com.example.mylocationtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110342689159-hh1bdbg7tfkeocuj588248ss85djame7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mylocationtracker",
+            "certificate_hash": "41e6c81ebfa04c815b5e2e5c5175656b59ec2b4b"
+          }
+        },
+        {
+          "client_id": "110342689159-0bi443ei3bckeagq3dbj2ihveqnhra1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7FfhVbhUVC3x78PMlfgMnE_4MvpSth1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110342689159-0bi443ei3bckeagq3dbj2ihveqnhra1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
