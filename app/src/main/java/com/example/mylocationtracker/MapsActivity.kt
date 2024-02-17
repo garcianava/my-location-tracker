@@ -1,17 +1,21 @@
 package com.example.mylocationtracker
 
 import android.Manifest
+
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
+import android.provider.Settings
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Looper
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+
 import com.google.android.gms.location.*
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -68,9 +72,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val current = LocalDateTime.now()
         val formatter = ofPattern("yyyyMMddHHmmssSSS")
 
+        // Get the device identifier for exporting to database
+        // val deviceId = Build.ID
+        val deviceID = Settings.Secure.getString(contentResolver,Settings.Secure.ANDROID_ID)
+
         // initialize this values from a broader scope
         database  = FirebaseDatabase.getInstance()
-        pathIdString = current.format(formatter)
+        pathIdString = deviceID + "-" + current.format(formatter)
 
         // added creation of location callback
         createLocationCallback()
