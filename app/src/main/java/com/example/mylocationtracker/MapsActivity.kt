@@ -90,7 +90,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         requestLocationUpdate()
 
         // get reference to button
-        val buttonClickMe = findViewById(R.id.btn_store_location) as Button
+        // val buttonClickMe = findViewById(R.id.btn_store_location) as Button
+        val buttonClickMe = findViewById<Button>(R.id.btn_store_location)
         // set on-click listener
 
         // set the initial numeric value to identify stored locations

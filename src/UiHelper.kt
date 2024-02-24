@@ -65,7 +65,7 @@ class UiHelper {
     fun getLocationRequest() : LocationRequest {
         val locationRequest = LocationRequest.create()
         locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
-        locationRequest.interval = 3000
+        locationRequest.interval = 2000
         return locationRequest
     }
 }
